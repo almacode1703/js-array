@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Array elements</title>
+
+    <style>
+        .para {
+            background-color: lightblue;
+            padding: 8px 12px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box"></div>
+
+    <script>
+
+       const fruits = ["orange", "apple", "banana"];
+
+       const box = document.getElementById("box");
+
+       for( let i = 0; i < fruits.length; i++){
+        const p = document.createElement("p");
+        p.innerHTML = fruits[i];
+        p.classList.add('para')
+        box.appendChild(p)
+       }
+
+
+
+    </script>
+       
+    
+</body>
+</html>
