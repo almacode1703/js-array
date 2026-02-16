@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of JS Call stack</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+     <script>
+         function addnums(a,b){
+               return a+b
+         }
+
+         function average(a,b){
+             return addnums(a,b)/2
+         }
+
+         let result = average(10,20)
+         document.getElementById("demo").innerHTML = result
+
+     </script>
+    
+</body>
+</html>
